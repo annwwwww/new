@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: #060101;
+            color: #1a8f3b;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 20%;
+        }
+        #loading {
+            display: block;
+        }
+        #message {
+            display: none;
+        }
+        #skull {
+            font-size: 60px;
+            display: none; /* Inicialmente oculto */
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">Carregando...</div>
+    <div id="skull">&#9760;</div>
+    <h1 id="message">Seu dispositivo foi  invadido</h1>
+
+    <script>
+        setTimeout(function() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('message').style.display = 'block';
+            document.getElementById('skull').style.display = 'block'; // Mostrar a caveira
+        }, 5000);
+    </script>
+</body>
+</html>
